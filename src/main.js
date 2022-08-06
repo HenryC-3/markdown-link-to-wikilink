@@ -32,11 +32,12 @@ function linkConvertor(str) {
         return `[${label}](${link})`; // process link "/assets/image.png" or "https://"
     } else {
         let [path, heading] = link.split("#"); // process link "/a/b/c.html#heading-name"
-        const noteName = path // remove ".html", then convert "/a/b/c" to "a.b.c"
-            .replace(`${fileExtension}`, "")
+        const noteName = path
+            .replace(/^\//, "") // "/a/b.md" → "a/b.md"
+            .replace(`${fileExtension}`, "") // "b.md" → "b"
+            .replace(/\.+\//g, "") // "../../a/b" → "a/b"
             .split("/")
-            .join(".")
-            .substring(1);
+            .join("."); // a.b
         return heading
             ? `[[${fileNamePrefix}${noteName}#${heading}]]`
             : `[[${fileNamePrefix}${noteName}]]`;

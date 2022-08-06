@@ -1,33 +1,10 @@
-## case 1
+> cases with ✅ will be converted to wikilink
 
-markdown link without anchor
-
-1. [directly write render functions](/guide/extras/render-function.html)
-
-## case 2
-
-markdown link with anchor
-
-1. [directly write render functions](/guide/extras/render-function.html#)
-2. [directly write render functions](/guide/extras/render-function.html#T)
-
-## case 4
-
-markdown link point to an asset or a web page
-
-1. [image](/assets/image.png)
-2. [image](https://assets/image.png)
-
-## case 5
-
-plain link
-
-1. extras/render-function.html
-2. https://assets/image.png
-
-## case 6
-
-markdown link with relative path
-
-1. [directly write render functions](../guide/extras/render-function.html)
-1. [directly write render functions](../../extras/render-function.html)
+|     | case                              | example                                                                |
+| --- | --------------------------------- | ---------------------------------------------------------------------- |
+| ✅  | markdown link without anchor      | [directly write render functions](/guide/extras/render-function.html)  |
+| ✅  | markdown link with anchor         | [directly write render functions](/guide/extras/render-function.html#) |
+| ✅  | markdown link with relative path  | [](../a/c.html) <br> [](../../a/c.html)                                |
+|     | markdown link point to an asset   | [image](/assets/image.png)                                             |
+|     | markdown link point to a web page | [http](https://assets/image.png)                                       |
+|     | plain link                        | https://assets/image.png                                               |

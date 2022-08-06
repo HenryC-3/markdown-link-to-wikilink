@@ -1,16 +1,10 @@
+> WARNING! Make sure to backup your file before conversion. This is a small script with limited [test cases](test/demo.bk/test.md).
+
 ## Info
 
-Convert markdown link to dendron wikilink.
+Convert markdown link to dendron wikilink in a directory.
 
-```md
-<!-- before -->
-
-[directly write render functions](/guide/extras/render-function.html#T)
-
-<!-- after -->
-
-[[guide.extras.render-function#T]]
-```
+Checkout [test cases](./test/demo.bk/test.md) for more information.
 
 ## Usage
 

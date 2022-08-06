@@ -1,0 +1,12 @@
+{
+  "name": "markdown-link-to-wikilink",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "convert": "node src/main.js"
+  },
+  "dependencies": {
+    "recursive-readdir": "^2.2.2",
+    "replace-in-file": "^6.3.5"
+  }
+}

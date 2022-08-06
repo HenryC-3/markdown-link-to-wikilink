@@ -15,10 +15,8 @@ Convert markdown link to dendron wikilink.
 ## Usage
 
 1. go to [main.js](src/main.js)
-2. modify variables listed blow
-   | variable | |
-   | -------------- | ---------------------------------------------------- |
-   | fileNamePrefix | file name prefix that will added to every file name |
-   | fileExtension | file extension that will be removed after conversion |
-   | dir | absolute path of your target dir |
+2. modify follow variables
+    - `fileNamePrefix`: file name prefix that will added to every file name
+    - `fileExtension`: file extension that will be removed after conversion
+    - `dir`: absolute path of your target dir
 3. `npm run convert`

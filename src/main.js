@@ -44,9 +44,11 @@ function linkConvertor(str) {
     }
 }
 
-function isAssetsLink(str) {
-    const reg = /^\/assets\//;
-    return reg.test(str);
+function isAssetsLink(str, regs = [/^\/assets\//, /^\.\/images\//]) {
+    const result = regs.some((reg) => {
+        return reg.test(str);
+    });
+    return result;
 }
 
 function isWebLink(str) {

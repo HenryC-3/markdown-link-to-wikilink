@@ -44,7 +44,12 @@ function linkConvertor(str) {
     }
 }
 
-function isAssetsLink(str, regs = [/^\/assets\//, /^\.\/images\//]) {
+function isAssetsLink(
+    str,
+    regs = [
+        /(^\/[(assets)(images)]+\/)|(^[(assets)(images)]+\/)|(^\.\/[(assets)(images)]+\/)/, // https://regex101.com/r/b39uCQ/1
+    ]
+) {
     const result = regs.some((reg) => {
         return reg.test(str);
     });

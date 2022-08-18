@@ -2,9 +2,9 @@
 
 |     | case                                    | example                                                                                                         |
 | --- | --------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
-| ✅  | markdown link without anchor            | [[vs.1.7.guide.extras.render-function]]                                           |
-| ✅  | markdown link with anchor               | [[vs.1.7.guide.extras.render-function]]                                          |
-| ✅  | markdown link with relative path        | [[vs.1.7.a.c]] <br> [[vs.1.7.a.c]]                                                                         |
+| ✅  | markdown link without anchor            | [directly write render functions](/guide/extras/render-function.html)                                           |
+| ✅  | markdown link with anchor               | [directly write render functions](/guide/extras/render-function.html#)                                          |
+| ✅  | markdown link with relative path        | [](../a/c.html) <br> [](../../a/c.html)                                                                         |
 |     | markdown link point to an assets folder | ![](./images/lifecycle.png), [image](/assets/image.png), [image](./assets/image.png), [image](assets/image.png) |
 |     | markdown link point to a web page       | [http](https://assets/image.png)                                                                                |
 |     | plain link                              | https://assets/image.png                                                                                        |

@@ -28,7 +28,7 @@ function linkConvertor(str) {
     const group = str.match(MDLinkReg);
     const label = group[1];
     const link = group[2];
-    if (isAssetsLink(link) || isWebLink(link)) {
+    if (isAssetsLink(link) || isWebLink(link) || isAnchorLink(link)) {
         return `[${label}](${link})`; // process link "/assets/image.png" or "https://"
     } else {
         let [path, heading] = link.split("#"); // process link "/a/b/c.html#heading-name"
@@ -58,5 +58,10 @@ function isAssetsLink(
 
 function isWebLink(str) {
     const reg = /^https:\/\//;
+    return reg.test(str);
+}
+
+function isAnchorLink(str) {
+    const reg = /^#/;
     return reg.test(str);
 }
